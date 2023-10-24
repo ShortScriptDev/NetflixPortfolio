@@ -1,0 +1,122 @@
+.root{
+    --background-color: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+html {
+    scroll-behavior: smooth;
+
+  }
+body{
+    display:grid;
+    grid-template-columns: 5% 95%;
+}
+/*navigation*/
+.navigation{
+    background-color: black;
+    opacity: 80%;
+    display:flex;
+    height:100%;
+    width:5%;
+    position: fixed;
+}
+.nav-links{
+    margin:auto;
+    width:100%;
+    display:grid;
+    grid-template-rows: 1fr;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    row-gap: 20px;
+}
+/*header block*/
+header{
+    width:100%;
+    height:80vh;
+    background-color: black;
+    display:grid;
+    grid-template-columns: 45% 45%;
+}
+.header-block{
+    border: 1px solid blue;
+    color:white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:15%;
+    display:grid;
+}
+.sub-descriptions{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header-block h1{
+    display:flex;
+    border: 1px solid blue;
+    font-size: 50px;
+    margin-bottom: 5px;
+    align-items: flex-end;
+}
+.header-block p{
+    border: 1px solid blue;
+    margin: 0;
+}
+/*logo*/
+.logo{
+    border: 1px solid red;
+    margin-left: 80%; 
+}
+/*Previews*/
+#previews{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* @media (max-width:1280px){
+    header{
+        width:100%;
+        height:65vh;
+        background-color: black;
+        display:grid;
+        grid-template-columns: 10% 40% 50%;
+        margin: 10px;
+    }
+    .logo{
+    border: 1px solid red;
+    margin-left: 80%; 
+    }
+}
+@media (max-width:1024px){
+    header{
+        width:100%;
+        height:65vh;
+        background-color: black;
+        display:grid;
+        grid-template-columns: 10% 40% 50%;
+        margin: 10px;
+    }
+    .logo{
+    border: 1px solid red;
+    margin-left: 80%; 
+    }
+}
+@media (max-width:400px){
+    header{
+        width:100%;
+        height:65vh;
+        background-color: black;
+        display:grid;
+        grid-template-columns: 10% 40% 50%;
+        margin: 10px;
+    }
+    .logo{
+    border: 1px solid red;
+    margin-left: 80%; 
+    }
+}
+
+*/
