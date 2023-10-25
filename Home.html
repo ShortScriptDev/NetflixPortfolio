@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Portfolio</title>
     <link rel="stylesheet" href="Home.css"/>
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/home.css' rel='stylesheet'>
 </head>
 <body>
     <div>
     <div class="navigation">
         <nav class="nav-links">
-            <a src="#more-info"><i class="gg-home"></i></a>
-            <a src="#more-info">S</a>
-            <a src="#more-info">E</a>
-            <a src="#more-info">G</a>
-            <a src="#more-info">R</a>
+            <a src="#more-info" class="gg-home" id="nav-icon"></a>
+            <a src="#more-info" class="gg-database" id="nav-icon"></a>
+            <a src="#more-info" class="gg-organisation" id="nav-icon"></a>
+            <a src="#more-info" class="gg-briefcase" id="nav-icon"></a>
+            <a src="#more-info" class="gg-mail" id="nav-icon"></a>
         </nav>
     </div>
     </div>
@@ -24,11 +23,19 @@
         <div class="header-block">
             <h1 class="title" id="title">ABOUT ME</h1>
             <div class="sub-descriptions">
-                <p class="rating" id="sub-desc">S S S S S</p>
+                <p class="rating">
+                    <i class="star"></i>
+                    <i class="star"></i>
+                    <i class="star"></i>
+                    <i class="star"></i>
+                    <i class="star"></i>
+                </p>
                 <p class="year" id="sub-desc">2023</p>
-                <img class="like button" like button/>
+                <i class="bi bi-hand-thumbs-up" id="sub-desc"></i>
+                <p class="like-count" id="sub-desc"><span>0</span>+</p>
             </div>
             <p class="description" id="description">A placeholder text is a clue, suggestion, or brief description that describes the expected value of an input field. Labels, as shown below, are a form of identification for a text field. They describe the purpose and/or function of form elements.</p>
+            <i class=" based-on">Based on your intrest in: <span>Web Devlopers</span></i>
             <div class="header-box-buttons">
                 <button class="visit-project" id="h-button">Visit Project</button>
                 <button class="more-info" id="h-button"> More Info</button>
@@ -62,8 +69,10 @@
             <img src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX"/>
         </div>
     </main>
+    <i class="gg-software-download"></i>
 </div>
 </div>
     <script src="home.js"></script>
 </body>
 </html>
+

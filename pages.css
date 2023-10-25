@@ -1,0 +1,40 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/briefcase.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/clipboard.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/home.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/database.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/file-document.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/organisation.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/mail.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/software-download.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    display:grid;
+    grid-template-columns: 6% 95%;
+}
+/*navigation*/
+.navigation{
+    background-color: black;
+    display:flex;
+    height:100%;
+    width:6%;
+    position: fixed;
+}
+.nav-links{
+    margin:auto 35%;
+    width:100%;
+    display:grid;
+    grid-template-rows: 1fr;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    row-gap: 50px;
+}
