@@ -51,7 +51,7 @@ body{
     text-align: center;
     row-gap: 0px;
 }
-#selected{
+.selected{
     background-color: rgb(92, 91, 91);
 }
 .nav-links{
