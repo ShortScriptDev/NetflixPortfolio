@@ -1,4 +1,6 @@
-let project;
+var directedLink = {
+    link: ''
+};
 let flockGainProject = {
     title: 'Flock Gain',
     description: 'Flock Gain is a social media platform. It gives users control of the design for their profile. Letting users choose to become apart of other users flocks. It incorpates disappearing messages on users profiles & has the functionality of instagram.',
@@ -89,7 +91,56 @@ let cert4 = {
     basedon: 'My Education',
     headerImage:  'https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX'
 };
-function selected(){
+document.getElementById('pageSkills').addEventListener('click', () =>{
+    localStorage.removeItem("links");
+    directedLink.link = 'pageSkills';
+    localStorage.setItem('links', JSON.stringify(directedLink.link));
+    location.href = 'pages.html';
+});
+document.getElementById('pageEducation').addEventListener('click', ()=>{
+    localStorage.removeItem("links");
+    directedLink.link = 'pageEducation';
+    localStorage.setItem('links', JSON.stringify(directedLink.link));
+    location.href = 'pages.html';
+}); 
+document.getElementById('pageResume').addEventListener('click', ()=>{
+    localStorage.removeItem("links");
+    directedLink.link = 'pageResume';
+    localStorage.setItem('links', JSON.stringify(directedLink.link));
+    location.href = 'pages.html';
+});
+document.getElementById('pageContact').addEventListener('click', ()=>{
+    localStorage.removeItem("links");
+    directedLink.link = 'pageContact';
+    localStorage.setItem('links', JSON.stringify(directedLink.link));
+    location.href = 'pages.html';
+});
+document.getElementById('navigation').addEventListener('mouseover',()=>{
+    document.querySelector('.gg-home').classList.remove('gg-home');
+    document.getElementById('home').innerHTML = 'Home';
+    document.querySelector('.gg-database').classList.remove('gg-database');
+    document.getElementById('pageSkills').innerHTML = 'Skills';
+    document.querySelector('.gg-organisation').classList.remove('gg-organisation');
+    document.getElementById('pageEducation').innerHTML = 'Education';
+    document.querySelector('.gg-briefcase').classList.remove('gg-briefcase');
+    document.getElementById('pageResume').innerHTML = 'Resume';
+    document.querySelector('.gg-mail').classList.remove('gg-mail');
+    document.getElementById('pageContact').innerHTML = 'Contact';
+});
+document.getElementById('navigation').addEventListener('mouseout',()=>{
+    document.getElementById('home').classList.add('gg-home');
+    document.getElementById('home').innerHTML = '';
+    document.getElementById('pageSkills').classList.add('gg-database');
+    document.getElementById('pageSkills').innerHTML = '';
+    document.getElementById('pageEducation').classList.add('gg-organisation');
+    document.getElementById('pageEducation').innerHTML = '';
+    document.getElementById('pageResume').classList.add('gg-briefcase');
+    document.getElementById('pageResume').innerHTML = '';
+    document.getElementById('pageContact').classList.add('gg-mail');
+    document.getElementById('pageContact').innerHTML = '';
+});
+
+function selected(project){
     let title = document.querySelector('.title');
     title.innerHTML = `${project.title}`;
     let description = document.querySelector('.description');
