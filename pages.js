@@ -1,7 +1,6 @@
 let directedLink = JSON.parse(localStorage.getItem('links')) || {
     link: ''
 };
-document.onload = addId(directedLink);
 let resume = {
     pageImg: 'https://i.ibb.co/Tv9gtdC/E258-B917-FA6-F-4-F3-C-A28-D-34-C31-C3-F5532.jpg',
     aboutImg: 'https://i.ibb.co/Kyz3ZVL/IMG-0500.png',
@@ -47,7 +46,7 @@ function addId(clicked){
     if (clicked === 'pageEducation'){
         document.getElementById('pageEducation').classList.add('selected');
         pageData(education); 
-        //add new pageImg for education
+        //placeholder for pageImg
     }
     else if(clicked === 'pageResume'){
         document.getElementById('pageResume').classList.add('selected');
@@ -70,4 +69,5 @@ function pageData(pages){
    let see = document.querySelector('.page-description').innerHTML = `${pages.pageDescription}`;
    let see1 = document.querySelector('.other-skills').innerHTML = `${pages.otherSkills}`;
 }
+document.onload = addId(directedLink);
 

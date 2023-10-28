@@ -116,6 +116,10 @@ document.getElementById('pageContact').addEventListener('click', ()=>{
     location.href = 'pages.html';
 });
 document.getElementById('navigation').addEventListener('mouseover',()=>{
+    let changeCss = document.createElement('style');
+    document.head.appendChild(changeCss);
+    let moveNavigation = document.querySelector('style');
+    moveNavigation.innerHTML = '.nav-links{margin:auto 22%;}'
     document.querySelector('.gg-home').classList.remove('gg-home');
     document.getElementById('home').innerHTML = 'Home';
     document.querySelector('.gg-database').classList.remove('gg-database');
@@ -128,6 +132,8 @@ document.getElementById('navigation').addEventListener('mouseover',()=>{
     document.getElementById('pageContact').innerHTML = 'Contact';
 });
 document.getElementById('navigation').addEventListener('mouseout',()=>{
+    let moveNavigation = document.querySelector('style');
+    moveNavigation.innerHTML = ''
     document.getElementById('home').classList.add('gg-home');
     document.getElementById('home').innerHTML = '';
     document.getElementById('pageSkills').classList.add('gg-database');
