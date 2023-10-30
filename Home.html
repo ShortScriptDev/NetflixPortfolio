@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DH Portfolio</title>
-    <link rel="stylesheet" href="Home.css"/>
+    <link rel="stylesheet" href="home.css"/>
 </head>
 <body>
+    <div class="body">
     <div>
     <div class="navigation" id="navigation">
         <nav class="nav-links">
@@ -31,8 +32,8 @@
                     <i class="star"></i>
                 </p>
                 <p class="year" id="sub-desc">2023</p>
-                <i class="bi bi-hand-thumbs-up" id="sub-desc"></i>
-                <p class="like-count" id="sub-desc"><span>0</span>+</p>
+                <i class="thumbs-up bi-hand-thumbs-up" id="sub-desc"></i>
+                <p class="like-count" id="sub-desc"><span id="liked">0</span>+</p>
             </div>
             <p class="description" id="description">A placeholder text is a clue, suggestion, or brief description that describes the expected value of an input field. Labels, as shown below, are a form of identification for a text field. They describe the purpose and/or function of form elements.</p>
             <i class=" based-on">Based on your intrest in: <span>Web Devlopers</span></i>
@@ -46,63 +47,66 @@
     <main>
         <p class="section-title">Recent Projects</p>
         <div class ="project-previews" id="previews">
-            <img class="sec-img" src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX" onclick="
+            <img class="sec-img" src="https://i.ibb.co/zhsJBnQ/Placeholder.png" alt="Placeholder" 
+            onclick="
+            console.log('what');
             selected(flockGainProject);
                 "/>
-            <img class="sec-img" src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX"
+            <img class="sec-img" src="https://i.ibb.co/zhsJBnQ/Placeholder.png" alt="Placeholder"
             onclick="
+                        console.log('what');
                 selected(project2);"/>
-            <img class="sec-img" src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX"
+            <img class="sec-img" src="https://i.ibb.co/zhsJBnQ/Placeholder.png" alt="Placeholder"
             onclick="
                 selected(project3);"/>
-            <img class="sec-img" src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX"
+            <img class="sec-img" src="https://i.ibb.co/zhsJBnQ/Placeholder.png" alt="Placeholder"
             onclick="
                 selected(project4);"/>
-            <img class="sec-img" src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX"
+            <img class="sec-img" src="https://i.ibb.co/zhsJBnQ/Placeholder.png" alt="Placeholder"
             onclick="
                 selected(project5);"/>
         </div>
         <p class="section-title">My Skills</p>
         <div class ="skills-previews" id="previews">
-            <img class="sec-img" src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX"
+            <img class="sec-img" src="https://i.ibb.co/zhsJBnQ/Placeholder.png" alt="Placeholder"
             onclick="
                 selected(frontEnd);"/>
-            <img class="sec-img" src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX"
+            <img class="sec-img" src="https://i.ibb.co/zhsJBnQ/Placeholder.png" alt="Placeholder"
             onclick="
                 selected(backEnd);"/>
-            <img class="sec-img" src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX"
+            <img class="sec-img" src="https://i.ibb.co/zhsJBnQ/Placeholder.png" alt="Placeholder"
             onclick="
                 selected(fullStack);"/>
-            <img class="sec-img" src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX"
+            <img class="sec-img" src="https://i.ibb.co/zhsJBnQ/Placeholder.png" alt="Placeholder"
             onclick="
                 selected(algorithms);"/>
-            <img class="sec-img" src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX"
+            <img class="sec-img" src="https://i.ibb.co/zhsJBnQ/Placeholder.png" alt="Placeholder"
             onclick="
                 selected(scientificComputing);"/>
         </div>
         <p class="section-title">Education</p>
         <div class ="education-previews" id="previews">
-            <img src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX"
+            <img src="https://i.ibb.co/zhsJBnQ/Placeholder.png" alt="Placeholder"
             onclick="
                 selected(college);"/>
-            <img src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX"
+            <img src="https://i.ibb.co/zhsJBnQ/Placeholder.png" alt="Placeholder"
             onclick="
                 selected(cert1);"/>
-            <img src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX"
+            <img src="https://i.ibb.co/zhsJBnQ/Placeholder.png" alt="Placeholder"
             onclick="
                 selected(cert2);"/>
-            <img src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX"
+            <img src="https://i.ibb.co/zhsJBnQ/Placeholder.png" alt="Placeholder"
             onclick="
                 selected(cert3);"/>
-            <img src="https://lh6.googleusercontent.com/0mVYz6z5FQZu54zEirRP3xEGEpmWnQVDXHwH-Iku7rwcgxxlp0J7Z7L2IrZtmPtqSoD06vfmnHehyS7WXbAumzb2ZNZU2Hjcn6ZP3R0o2_wVrqbvLcI3mog4IWbwOzgMDyBIPJpX"
+            <img src="https://i.ibb.co/zhsJBnQ/Placeholder.png" alt="Placeholder"
             onclick="
                 selected(cert4);"/>
         </div>
     </main>
-    <i class="gg-software-download"></i>
 </div>
 </div>
-<script type="module" src="home.js"></script>
+</div>
+<script src="home.js"></script>
 </body>
 </html>
 
