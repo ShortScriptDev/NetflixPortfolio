@@ -1328,7 +1328,7 @@ body {
     background-color: rgba(228, 9, 19, 0);
   }
 }/*# sourceMappingURL=styles.css.map */
-@media (max-width:1280px){
+@media (max-width:850px){
     
 /*navigation*/
 .navigation{
@@ -1424,7 +1424,7 @@ header{
     display: none;
   }
 }
-@media (max-width:850px){
+@media (max-width:798px){
     
 /*navigation*/
 .navigation{
